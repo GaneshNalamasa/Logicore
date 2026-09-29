@@ -12,8 +12,8 @@ export default function Contact({ darkMode }) {
     setStatus('');
 
     // TODO: Replace these with your actual EmailJS credentials
-    const SERVICE_ID = 'service_bluhe3i';
-    const TEMPLATE_ID = 'ejs-test-mail-service'; // e.g. template_xxxxx
+    const SERVICE_ID = 'service_ecxcmbg';
+    const TEMPLATE_ID = '__ejs-test-mail-service_'; // e.g. template_xxxxx
     const PUBLIC_KEY = '77Z8JlrU2zgAasHJg';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
