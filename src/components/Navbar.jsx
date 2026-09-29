@@ -36,13 +36,11 @@ export default function Navbar({
                 </span>
               </div>
               
-              {/* Upgraded Tagline with glowing styling */}
-              <div className="flex items-center gap-2 mt-1">
-                <span className="h-[1.5px] w-4 bg-gradient-to-r from-transparent to-cyan-500"></span>
-                <span className={`text-[8.5px] sm:text-[9.5px] font-mono font-bold tracking-[0.25em] uppercase bg-gradient-to-r ${darkMode ? 'from-cyan-300 via-blue-400 to-indigo-300 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]' : 'from-blue-700 to-cyan-700 bg-clip-text text-transparent'}`}>
-                  INTELLIGENCE FOR A BRIGHTER TOMORROW
+              {/* Updated Logo Subtitle */}
+              <div className="flex items-center gap-1.5 mt-1">
+                <span className={`text-[8.5px] sm:text-[9.5px] font-mono font-bold tracking-[0.18em] uppercase ${darkMode ? 'text-cyan-400/90' : 'text-blue-700'}`}>
+                  — INTELLIGENCE FOR A BRIGHTER TOMORROW —
                 </span>
-                <span className="h-[1.5px] w-4 bg-gradient-to-l from-transparent to-cyan-500"></span>
               </div>
             </div>
           </div>
@@ -74,14 +72,14 @@ export default function Navbar({
                   : 'bg-white/80 border-slate-200 text-slate-700 hover:bg-slate-100'
               }`}
             >
-              <span>{darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}</span>
+              <span>{darkMode ? '☀️️ Light Mode' : '🌙 Dark Mode'}</span>
             </button>
           </div>
 
           {/* Mobile Buttons */}
           <div className="md:hidden flex items-center gap-2">
             <button onClick={() => setDarkMode(!darkMode)} className={`p-2.5 rounded-xl border text-sm font-medium ${darkMode ? 'bg-slate-900 border-slate-800 text-cyan-400' : 'bg-slate-100 border-slate-200 text-slate-700'}`}>
-              {darkMode ? '☀️' : '🌙'}
+              {darkMode ? '☀️️' : '🌙'}
             </button>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className={`p-2.5 rounded-xl ${darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-600'}`}>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
