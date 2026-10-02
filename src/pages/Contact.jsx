@@ -1,7 +1,7 @@
 // src/pages/Contact.jsx
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import virginiaImage from '../assets/virginia.jpg';
+import virginiaImage from '../assets/your-logo.png';
 
 export default function Contact({ darkMode }) {
   const [status, setStatus] = useState('');
