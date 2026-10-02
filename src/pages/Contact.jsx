@@ -39,12 +39,14 @@ export default function Contact({ darkMode }) {
       {/* Header Section with Local Virginia Asset Background */}
       <div className="relative space-y-4 mb-20 text-center max-w-3xl mx-auto overflow-hidden py-10">
         
-        {/* Virginia Asset Background Layer */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 overflow-hidden">
+        {/* Virginia Asset Background Layer with Explicit Width & Height */}
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none -z-10">
           <img 
             src={virginiaImage} 
             alt="Virginia Outline" 
-            className={`w-full max-w-lg object-contain transition-opacity duration-300 select-none ${
+            width="600"
+            height="400"
+            className={`w-full h-full max-w-lg object-contain transition-opacity duration-300 select-none ${
               darkMode 
                 ? 'opacity-30 invert mix-blend-screen brightness-150' 
                 : 'opacity-25 grayscale mix-blend-multiply'
