@@ -46,8 +46,8 @@ export default function Contact({ darkMode }) {
             alt="Virginia Outline" 
             className={`w-full max-w-lg object-contain transition-opacity duration-300 select-none ${
               darkMode 
-                ? 'opacity-20 invert brightness-125' 
-                : 'opacity-20 grayscale'
+                ? 'opacity-30 invert mix-blend-screen brightness-150' 
+                : 'opacity-25 grayscale mix-blend-multiply'
             }`}
             style={{
               maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)',
